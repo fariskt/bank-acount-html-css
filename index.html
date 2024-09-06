@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Check Bank Balance</h2>
+
+      <div class="deposit">
+        <label for="deposit">Deposit : </label>
+        <input
+          type="number"
+          placeholder="Enter your deposit amount"
+          id="deposit"
+        />
+        <button onclick="depositAmount()">Deposit</button>
+        <br>
+      </div>
+
+      <div class="withdraw">
+        <label for="withdraw">Withdraw :</label>
+        <input
+          type="number"
+          placeholder="Enter your withdraw amount"
+          id="withdraw"
+        />
+        <button onclick="withdrawMoney()">Withdraw</button>
+      </div>
+
+      <div class="show-balance">
+        <button onclick="showBalance()">Show Balance</button>
+        <h3 id="showBalance">Bank Balance : ₹0</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
